@@ -50,7 +50,7 @@ body{
     visibility: visible;
     display: flex;
     gap: 1rem;
-    height: 91vh;
+    height: 100vh;
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
