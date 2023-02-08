@@ -289,9 +289,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     gap: 2rem;
-
 }
 .my__projects__general__container>:first-of-type{
     margin-bottom: 0.5rem;
@@ -299,7 +297,6 @@ body{
 .my__projects__general__container>div:first-of-type>h4{
     color: rgb(120, 127, 139);
     margin-bottom: 1.1rem;
-    
 }
 .my__projects__general__container>div:first-of-type>h2{
     font-size: 30px;
@@ -314,7 +311,6 @@ body{
     background-color: rgb(30, 30, 40);
     max-width: 360px;
     height:550px;
-    
 }
 .my__projects__item>div{
     margin: 1.5rem 1rem 0 1rem;
@@ -559,7 +555,6 @@ footer{
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    
 }
 .footer__list__container>li>a{
     color: white;
@@ -573,6 +568,7 @@ footer{
     cursor: pointer;
     transition: .4s ease-out; 
 }
+/* Todo listo! */
 
 
 
