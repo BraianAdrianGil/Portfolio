@@ -63,13 +63,19 @@ body{
     height: 40px;
     transition: ease-in 0.4s ;
 }
-@media screen and (max-width:1400px){
+@media (hover: hover){
     .nav__menu>li:hover{
         color: rgb(211, 146, 35);
         font-size: 20px;
         cursor: pointer;
         transition: .4s ease-out; 
     }
+}
+.nav__menu>li:active{
+    color: rgb(211, 146, 35);
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s ease-out; 
 }
 .header__mayor__container{
     width: 100%;
