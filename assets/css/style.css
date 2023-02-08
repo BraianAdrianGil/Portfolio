@@ -60,13 +60,13 @@ body{
 
 .nav__menu>li {
     height: 40px;
-    transition:  0.4s ;
+    transition:  0.2s ;
 }
 .nav__menu>li:hover{
     color: rgb(211, 146, 35);
     font-size: 20px;
     cursor: pointer;
-    transition: .4s ; 
+    transition: .2s ; 
 }
 .header__mayor__container{
     width: 100%;
