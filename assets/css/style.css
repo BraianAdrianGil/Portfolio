@@ -7,9 +7,6 @@
 *,*::before,*::after{
     box-sizing: border-box;
 }
-html{
-    max-width: 360px;
-}
 body{
     margin: 0 auto 0 auto;
     box-sizing: inherit;
