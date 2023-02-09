@@ -62,27 +62,34 @@ body{
 .nav__menu>li{
     height: 40px;
 }
-.nav__menu>li>a {
+.nav__menu>li>a{
+    position: relative;
     color:white;
     font-weight: 400;
-    transition: all ease-in 0.4s ;
+    transition: all 0.2s;
+    cursor: pointer;
 }
-@media (hover: hover){
-    .nav__menu>li>a:hover{
-        color: rgb(211, 146, 35);
-        font-size: 20px;
-        cursor: pointer;
-        transition: .3s ease-out; 
-        
-    }
-}
-.nav__menu>li:active{
+.nav__menu>li>a:hover{
     color: rgb(211, 146, 35);
     font-size: 20px;
-    cursor: pointer;
-    transition: .4s ease-out;
-     
+    transition: all 0.4s;
 }
+.nav__menu>li>a::after{
+    position: absolute;
+    border-bottom: 1px solid orange;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    transition: all 0.4s;
+}
+.nav__menu>li>a:hover::after{
+    width: 0%;
+    transition: all 0.4s;
+}
+
 .header__mayor__container{
     width: 100%;
     height: 580px;
@@ -199,26 +206,36 @@ body{
     font-weight: 500;
 }
 .about__me__btn>a{
-    color: black;
-    font-size: 14px;
-    text-decoration: none;
-    display: inline-block;
-    border-bottom: 1px solid rgb(47, 46, 46);
-    height: 28px;
+  position: relative;
+  text-decoration: none;
+  color: black;
 }
-.about__me__btn a:hover{
+.about__me__btn>a:hover{
     color: blueviolet;
-    border-bottom: 1px solid blueviolet;
     transition: all 0.4s;
 }
-.about__me__btn a::after{
+.about__me__btn>a:hover::after {
+    color: blueviolet;
     content: ">";
-    padding-left: 0.2rem;
-    display: none;
-   
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+    transition: all 0.2s linear;
 }
-.about__me__btn a:hover::after{
-    display: inline;
+.about__me__btn>a::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    transition:  0.4s linear;
+}
+.about__me__btn>a:hover::before{
+    border-bottom: 2px solid blueviolet;
+    transition: 0.2s linear;
+    width: 100%;
 }
 .about__me__image__container{
     width: 100%;
@@ -398,24 +415,38 @@ body{
     font-weight:600;
     max-width: 310px;
 }
-.behance__first__container a{
-    display: inline-block;
+.behance__link>a{
+    position: relative;
     font-weight: bold;
     color: black;
-    height: 30px;
-    border-bottom:  0.1rem solid rgb(94, 90, 95);
 }
-.behance__link>a::after{
-    display: none;
-    content: ">";
+.behance__link>a:hover{
+    color: blueviolet;
+    transition: all 0.4s;
 }
 .behance__link>a:hover::after{
-    display: inline;
-}
-.behance__first__container a:hover{
     color: blueviolet;
-    border-color: blueviolet;
-    transition: all 0.4s;
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: 0;
+    transition: all 0.4s linear;
+}
+.behance__link>a::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    transition:  0.4s linear;
+}
+.behance__link>a:hover::before{
+    border-bottom: 2px solid blueviolet;
+    transition: 0.2s linear;
+    width: 100%;
 }
 .behance__image__container{
     width: 100%;
@@ -424,11 +455,6 @@ body{
 .behance__image__container>img{
     width: 100%;
     height: 400px
-}
-.behance__link>a::after{
-    content: ">";
-    display: none;
-    padding-left: 0.5rem;
 }
 .ux__general__container{
     display: flex;
@@ -456,24 +482,36 @@ body{
     margin-top: 1.5rem;
 }
 .ux__title__container>div>a{
+    position: relative;
     color: white;
-    display: inline-block;
-    border-bottom: 1px solid rgb(132, 142, 159);
-    height: 25px;
-}
-.ux__title__container>div>a::after{
-    padding-left: 0.5rem;
-    content: ">";
-    display: none;
-}
-.ux__title__container>div>a:hover::after{
-    display:inline;
-    
 }
 .ux__title__container>div>a:hover{
-    color: rgb(221, 152, 24);
-    border-bottom:  1px solid currentColor;
-    transition: all 0.5s ;
+    color: orange;
+    transition: all 0.4s;
+}
+.ux__title__container>div>a:hover::after{
+    color: orange;
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: 0;
+    transition: all 0.4s linear;
+}
+.ux__title__container>div>a::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    transition:  0.4s linear;
+}
+.ux__title__container>div>a:hover::before{
+    border-bottom: 2px solid orange;
+    transition: 0.2s linear;
+    width: 100%;
 }
 .ux__image__container{
     width: 100%;
@@ -611,16 +649,39 @@ footer{
     gap: 2rem;
 }
 .footer__list__container>li>a{
+    position: relative;
     color: white;
     font-size: 14px;
-    transition: ease-in 0.4s;
+    transition: 0.4s;
 }
 .footer__list__container>li>a:hover{
-    height: 50px;
-    color: rgb(211, 146, 35);
     font-size: 16px;
-    cursor: pointer;
-    transition: .4s ease-out; 
+    color: orange;
+    transition: all 0.4s;
+}
+.footer__list__container>li>a:hover::after{
+    color: orange;
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    bottom: 0;
+    transition: all 0.4s linear;
+}
+.footer__list__container>li>a::before{
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    transition:  0.4s linear;
+}
+.footer__list__container>li>a:hover::before{
+    border-bottom: 2px solid orange;
+    transition: 0.2s linear;
+    width: 100%;
 }
 /* Todo listo! */
 
