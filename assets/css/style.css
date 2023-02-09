@@ -59,24 +59,29 @@ body{
     background-color: rgba(30, 30, 40, 0.978);
     transition:ease-out all 0.2s ;
 }
-
-.nav__menu>li {
+.nav__menu>li{
     height: 40px;
-    transition: ease-in 0.4s ;
+}
+.nav__menu>li>a {
+    color:white;
+    font-weight: 400;
+    transition: all ease-in 0.4s ;
 }
 @media (hover: hover){
-    .nav__menu>li:hover{
+    .nav__menu>li>a:hover{
         color: rgb(211, 146, 35);
         font-size: 20px;
         cursor: pointer;
-        transition: .4s ease-out; 
+        transition: .3s ease-out; 
+        
     }
 }
 .nav__menu>li:active{
     color: rgb(211, 146, 35);
     font-size: 20px;
     cursor: pointer;
-    transition: .4s ease-out; 
+    transition: .4s ease-out;
+     
 }
 .header__mayor__container{
     width: 100%;
@@ -199,9 +204,25 @@ body{
     color: black;
     font-weight: 500;
 }
-.about__me__description__container>div:last-of-type{
-    border-bottom: 1px solid rgb(101, 98, 98);;
+.about__me__btn>a{
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid rgb(19, 19, 19);
     height: 25px;
+}
+.about__me__btn>a:hover{
+    color: blueviolet;
+    border-bottom: 1px solid blueviolet;
+}
+.about__me__btn a::after{
+    content: ">";
+    padding-left: 0.5rem;
+    display: none;
+    transition: all 0.4s ease;
+}
+.about__me__btn a:hover::after{
+    display: inline-block;
+    transition: all 0.4s ease;
 }
 .about__me__image__container{
     width: 100%;
@@ -381,14 +402,24 @@ body{
     font-weight:600;
     max-width: 310px;
 }
-.behance__first__container>div:last-of-type{
-    max-width: fit-content;
-    height: 30px;
-    border-bottom:  0.1rem solid rgb(139, 108, 142);
-}
 .behance__first__container a{
+    display: inline-block;
     font-weight: bold;
     color: black;
+    height: 30px;
+    border-bottom:  0.1rem solid rgb(94, 90, 95);
+}
+.behance__link>a::after{
+    display: none;
+    content: ">";
+}
+.behance__link>a:hover::after{
+    display: inline;
+}
+.behance__first__container a:hover{
+    color: blueviolet;
+    border-color: blueviolet;
+    transition: all 0.4s;
 }
 .behance__image__container{
     width: 100%;
@@ -397,6 +428,11 @@ body{
 .behance__image__container>img{
     width: 100%;
     height: 400px
+}
+.behance__link>a::after{
+    content: ">";
+    display: none;
+    padding-left: 0.5rem;
 }
 .ux__general__container{
     display: flex;
@@ -422,11 +458,26 @@ body{
 }
 .ux__title__container>div{
     margin-top: 1.5rem;
-    border-bottom: 1px solid rgb(132, 142, 159);
-    height: 25px;
 }
 .ux__title__container>div>a{
     color: white;
+    display: inline-block;
+    border-bottom: 1px solid rgb(132, 142, 159);
+    height: 25px;
+}
+.ux__title__container>div>a::after{
+    padding-left: 0.5rem;
+    content: ">";
+    display: none;
+}
+.ux__title__container>div>a:hover::after{
+    display:inline;
+    
+}
+.ux__title__container>div>a:hover{
+    color: rgb(221, 152, 24);
+    border-bottom:  1px solid currentColor;
+    transition: all 0.5s ;
 }
 .ux__image__container{
     width: 100%;
