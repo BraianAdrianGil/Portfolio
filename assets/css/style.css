@@ -51,11 +51,15 @@ body{
     gap: 1rem;
     list-style: none;
     background-color: rgba(30, 30, 40, 0.978);
-    transition:ease-out all 0.2s ;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
 }
-.nav__menu__visible{
-    display: none;
-    transition: all 0.4s;
+.nav__menu__not__visible{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
 }
 .nav__menu>li{
     height: 40px;
