@@ -37,22 +37,25 @@ body{
     cursor: pointer;
 }
 .nav__menu{
+    overflow-x: hidden;
     position: absolute;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content:space-around;
-   margin-right: 40px;
-   height: 94vh;
-   top: 60px;
-   width: 100%;
-   padding: 20px 0;
-   overflow: auto;
-   gap: 1rem;
-   list-style: none;
-   background-color: rgba(30, 30, 40, 0.978);
-   transition:ease-out all 0.2s ;
-   left: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin-right: 40px;
+    height: 100%;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    gap: 1rem;
+    list-style: none;
+    background-color: rgba(30, 30, 40, 0.978);
+    transition:ease-out all 0.2s ;
+}
+.nav__menu__visible{
+    display: none;
+    transition: all 0.4s;
 }
 .nav__menu>li{
     height: 40px;
@@ -86,9 +89,6 @@ body{
 .nav__menu>li>a:hover::after{
     width: 0%;
     transition: all 0.4s;
-}
-.nav__menu__visible{
-    left: 0;
 }
 .nav__toggle{
     border: none;
