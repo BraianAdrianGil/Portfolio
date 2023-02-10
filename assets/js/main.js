@@ -18,13 +18,3 @@ removeVisible(work)
 removeVisible(photography)
 removeVisible(contact)
 //==============================================
-const navContainer = document.querySelector(".nav__container");
-const navBtn=document.querySelector(".nav__toggle")
-window.addEventListener("scroll", function() {
-  if (window.pageYOffset === 0) {
-    navContainer.style.backgroundColor = "black";
-  } else {
-    navContainer.style.backgroundColor = "transparent";
-    navBtn.style.backgroundColor="transparent"
-  }
-});
