@@ -10,7 +10,7 @@ const photography=document.querySelector(".photography")
 const contact=document.querySelector(".contact")
 const removeVisible =(element) =>{
     element.addEventListener("click",()=> {
-        navMenu.classList.remove("nav__menu__visible")
+        navMenu.classList.remove("nav__menu__not__visible")
     })
 }
 removeVisible(experience)
