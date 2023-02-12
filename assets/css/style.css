@@ -108,10 +108,10 @@ body{
     background-color: rgba(47, 47, 57, 0.978);
     position: fixed;
     right: 0;
-    bottom: 10.1%;
+    bottom: 5%;
     z-index: 2;
     border-radius: 5px;
-    height: 45.2px;
+    height: 45px;
     width: 40px;
 }
 .nav__toggle__fixed>i{
@@ -129,8 +129,8 @@ body{
     margin: 0;
     position: fixed;
     top: unset;
-    bottom: 10.1%;
-    right:10.5%;
+    bottom: 5%;
+    right:37px;
     z-index: 1;
     height: 45px;
     width:85%;
