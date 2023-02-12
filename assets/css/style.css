@@ -71,17 +71,17 @@ body{
     position: relative;
     color:white;
     font-weight: 400;
-    transition: all 0.2s;
+    transition: all 0.4s;
     cursor: pointer;
 }
 .nav__menu>li>a:hover{
-    color: rgb(211, 146, 35);
-    font-size: 20px;
+    color: rgb(237, 142, 27);
+    font-size: 22px;
     transition: all 0.4s;
 }
 .nav__menu>li>a::after{
     position: absolute;
-    border-bottom: 1px solid rgb(211, 146, 35);
+    border-bottom: 2px solid rgb(236, 136, 6);
     margin: auto;
     bottom: 0;
     left: 0;
@@ -1008,12 +1008,15 @@ footer{
     .skillset__items__container{
         width: 43%;
     }
+    .logos__container{
+        display: flex;
+    }
     .my__projects__general__container {
-        align-items:normal;
+        margin-left: 5.5rem;
+        align-items:flex-start;
         flex-wrap: wrap;
         height: 1420px;
         width: 100%;
-        margin-left: 2rem;
     }
     .my__projects__general__container>div:last-of-type{
         margin-top: 1rem;
@@ -1027,6 +1030,7 @@ footer{
         width: 190px;
         background-color: black;
         transition: all 0.4s;
+        border: none;
     }
     .my__projects__general__container>div:last-of-type>button>a{
         color: rgb(235, 228, 228);
@@ -1049,6 +1053,7 @@ footer{
         margin-bottom: 0;
     }
     .my__projects__item{
+        margin-right: -10rem;
         max-width: 430px;
         width: 430px;
         height: 600px;
@@ -1058,6 +1063,14 @@ footer{
     }
     .my__projects__item>div{
         height: 30%;
+    }
+    .my__projects__general__container > div:last-of-type {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 430px;
+        margin-right: 0;
     }
     .behance__general__container{
         margin-top: 1rem;
@@ -1219,12 +1232,16 @@ footer{
         align-items: center;
     }
     .my__projects__general__container{
+        margin-left: 3rem;
         width: 100%;
         max-width: 100%;
         margin: 3rem 0 0 0;
         flex-direction: row;
         justify-content:center;
         align-items: center;
+    }
+    .my__projects__item{
+        margin-right: 0;
     }
     .my__projects__title__container{
         max-width: 25%;
@@ -1330,33 +1347,3 @@ footer{
         font-size: 40px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
