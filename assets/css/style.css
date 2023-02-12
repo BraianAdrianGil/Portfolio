@@ -979,6 +979,105 @@ footer{
         width: 50%;
     }
 }
+@media screen and (min-width:1024px){
+    .skillset__general__container{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .skillset__title__container {
+        width: 42%;
+    }
+    .skillset__title__container>h2{
+        font-size: 35px;
+    }
+    .skillset__title__container > p {
+        font-size: 18px;
+        max-width: 100%;
+        letter-spacing: 2px;
+    }
+    .skillset__general__items__container {
+        width: 68%;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .skillset__items__container{
+        width: 43%;
+    }
+    .my__projects__general__container {
+        align-items:normal;
+        flex-wrap: wrap;
+        height: 1420px;
+        width: 100%;
+        margin-left: 2rem;
+    }
+    .my__projects__general__container>div:last-of-type{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 430px;
+    }
+    .my__projects__general__container>div:last-of-type>button{
+        height: 50px;
+        width: 190px;
+        background-color: black;
+        transition: all 0.4s;
+    }
+    .my__projects__general__container>div:last-of-type>button>a{
+        color: rgb(235, 228, 228);
+        display: inline-block;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+        width: 170px;
+        font-size: 12px;
+        font-weight: thin;
+        box-shadow: 0px 0px 5px 5px rgba(223, 218, 231, 0.199);
+        transition: font-size 0.4s , box-shadow 0.4s;
+    }
+    .my__projects__general__container>div:last-of-type>button>a:hover{
+        color: rgb(144, 46, 241);
+        font-size: 13px;
+        box-shadow: 0px 0px 5px 5px rgba(134, 69, 238, 0.199);
+    }
+    .my__projects__general__container>:first-of-type{
+        margin-bottom: 0;
+    }
+    .my__projects__item{
+        max-width: 430px;
+        width: 430px;
+        height: 600px;
+    }
+    .my__projects__item>img{
+        height: 64%;
+    }
+    .my__projects__item>div{
+        height: 30%;
+    }
+    .behance__general__container{
+        margin-top: 1rem;
+    }
+    .behance__first__container{
+        margin-left: 3rem;
+    }
+    .ux__image__container>img{
+        max-width: 50%;
+    }
+    .ux__title__container>p{
+        font-size: 14px;
+    }
+    .ux__title__container>p{
+        max-width: 60%;
+    }
+    .ux__title__container>div>a{
+        font-size: 12px;
+    }
+}
 @media  screen and (min-width:1440px){
     .header__image__container>img {
         position: absolute;
@@ -1119,38 +1218,19 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    .my__projects__general__container {
+    .my__projects__general__container{
+        width: 100%;
+        max-width: 100%;
+        margin: 3rem 0 0 0;
         flex-direction: row;
+        justify-content:center;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        margin-top: 5rem;
-        max-height: 1900px;
-    }
-    .my__projects__item {
-        height: 520px;
-    }
-    .my__projects__item__two{
-        margin-left: 0;
-        height: 535px;
     }
     .my__projects__title__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        max-width: 25%;
         width: 100%;
-        height: 250px;
-        gap: 2rem;
-        text-align: center;
-    }
-    .my__projects__general__container>div:first-of-type>h4 {
-       font-size: 25px;
-    }
-    .my__projects__general__container>div:first-of-type>h2{
-        max-width: 50%;
-        font-size: 45px;
-        line-height: normal;
+        align-self: center;
+        justify-self: center;
     }
     .behance__general__container{
         height: 550px;
@@ -1164,33 +1244,39 @@ footer{
         justify-content: space-evenly;
     }
     .ux__general__container{
-        margin: 6rem  9rem 0 9rem ;
+        margin: 5rem 3rem 0 3rem;
+        flex-direction: row;
+        height: 400px;
+        max-height: 400px;
     }
     .ux__title__container {
+        max-width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 2rem;
     }
     .ux__title__container>h2{
-        font-size: 50px;
+        font-size: 40px;
     }
     .ux__title__container>p{
-        font-size: 22px;
-        max-width: 800px;
+        font-size: 16px;
+        max-width: 600px;
     }
     .ux__image__container{
+        max-width: 50%;
+        height: 400px;
         justify-content: flex-start;
-        margin-top: 2rem;
-        height: 600px;
+        align-items: flex-start;
     }
     .ux__image__container>img{
-        width: 100%;
-        height: 600px;
-        max-height: 600px;
+       width: 656px;
+       max-width: 656px;
+       height: 400px;
+       max-height: 400px;
     }
     .business__general__container {
-        margin: 9rem 9rem 9rem 9rem;
+        margin: 6rem 3rem 0 3rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -1202,7 +1288,7 @@ footer{
     }
     footer {
         flex-direction: row;
-        height: 200px;
+        height: 170px;
         padding-bottom: 0;
         margin-bottom: 0;
 
