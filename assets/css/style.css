@@ -50,6 +50,7 @@ body{
     gap: 1rem;
     list-style: none;
     background-color: rgba(47, 47, 57, 0.978);
+    border-radius: none;
     opacity: 0;
     visibility: hidden;
     transform: translateX(100%);
@@ -109,7 +110,7 @@ body{
     bottom: 5%;
     z-index: 2;
     border-radius: 5px;
-    height: 45.5px;
+    height: 45.4px;
     width: 40px;
 }
 .nav__toggle__fixed>i{
@@ -126,11 +127,11 @@ body{
     padding: 0;
     margin: 0;
     position: fixed;
-    top:665px;
-    right:38px;
+    top: 89%;
+    right:8.3%;
     z-index: 1;
     height: 45px;
-    width: 88%;
+    width: 360px;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
