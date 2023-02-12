@@ -625,12 +625,12 @@ textarea:focus,input:focus{
     background-color: rgb(78, 19, 240);
     color: white;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 13px;
     cursor: pointer;
-    transition: 0.4s linear;
+    transition: all 0.4s;
 }
 .business__button__container>button:hover{
-    transform:  scale(1.5);
+    transform:  scale(1.1) rotate(2deg);
 }
 footer li{
     list-style: none;
@@ -868,12 +868,10 @@ footer{
     }
     .skillset__general__container{
         display: flex;
-        gap: 6rem;
     }
     .skillset__general__items__container {
        justify-content: center;
        flex-direction: row;
-       justify-content: space-evenly;
        align-items: center;
        gap: 3.5rem;
     }
@@ -882,31 +880,18 @@ footer{
         max-width: 90%;
     }
     .skillset__items__container{
+        max-width: 30%;
+        width: 170px;
+        height: 170px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
-        gap: 0.8rem;
-        height: 280px;
-        width: 32%;
         box-shadow: 2px 2px 4px 1px rgba(72, 72, 109, 0.928);
         border-radius: 15px;
         transition: all 0.3s ease-out;
     }
     .skillset__items__container:hover{
         transform: translateY(-10px) scale(1.050);
-    }
-    .skillset__items__container>ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        height: 20%;
-        padding: 10px;
-    }
-    .skillset__items__container>ul>li{
-        text-align: center;
     }
     .behance__general__container{
         flex-direction: row;
@@ -985,6 +970,7 @@ footer{
         justify-content: flex-start;
         align-items: flex-start;
         gap: 1rem;
+        margin-right: 0;
     }
     .skillset__title__container {
         width: 42%;
@@ -996,10 +982,11 @@ footer{
         font-size: 18px;
         max-width: 100%;
         letter-spacing: 2px;
+        line-height: 25px;
     }
     .skillset__general__items__container {
         width: 68%;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
@@ -1089,6 +1076,9 @@ footer{
     }
     .ux__title__container>div>a{
         font-size: 12px;
+    }
+    footer{
+        height: 200px;
     }
 }
 @media  screen and (min-width:1440px){
