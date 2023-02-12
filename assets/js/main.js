@@ -18,3 +18,11 @@ removeVisible(work)
 removeVisible(photography)
 removeVisible(contact)
 //==============================================
+window.addEventListener("scroll", () =>{
+    if(window.scrollY> 0){
+        navMenu.classList.add("nav__menu__fixed")
+        navToggle.classList.add("nav__toggle__fixed")
+    } else {
+        navToggle.classList.remove("nav__toggle__fixed")
+    }
+})
