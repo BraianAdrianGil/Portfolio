@@ -3,7 +3,7 @@ const navMenu= document.querySelector(".nav__menu")
 navToggle.addEventListener("click", () =>{
     navMenu.classList.toggle("nav__menu__not__visible")
 })
-// ============================================
+//==============================================
 const experience=document.querySelector(".experience")
 const work=document.querySelector(".work")
 const photography=document.querySelector(".photography")
