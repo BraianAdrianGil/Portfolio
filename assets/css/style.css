@@ -335,7 +335,7 @@ body{
     font-size: 28px;
 }
 .skillset__title__container>p{
-    color: rgb(156, 162, 172);
+    color: rgb(191, 194, 200);
     line-height: 22px;
     max-width: 280px;
     font-weight:lighter;
@@ -363,7 +363,7 @@ body{
 .skillset__items__container>ul>li{
     margin-top: 0.3rem;
     font-size: 14px;
-    color: rgb(156, 162, 172);
+    color: rgb(191, 194, 200);
     list-style: none;
 }
 .logos__container{
