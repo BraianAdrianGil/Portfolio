@@ -143,6 +143,7 @@ background-size: cover;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(47, 47, 57, 0.978);
+    border-radius: 20px 0 0 0;
 }
 .nav__menu__fixed>li>a{
     font-size: 12px;
