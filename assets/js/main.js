@@ -19,9 +19,8 @@ removeVisible(photography)
 removeVisible(contact)
 //==============================================
 window.addEventListener("scroll", () =>{
-    if(window.scrollY> 0){
+    if(window.scrollY> 0 || image.size < 768) {
         navToggle.classList.add("nav__toggle__fixed")
-        
         navMenu.classList.add("nav__menu__fixed")
     } else {
         navToggle.classList.remove("nav__toggle__fixed")
